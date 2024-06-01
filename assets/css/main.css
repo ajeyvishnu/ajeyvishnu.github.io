@@ -4690,7 +4690,7 @@ input, select, textarea {
 
 	.intro .image img {
 		max-width: 100%; /* Ensure image doesn't exceed container width */
-		width: 300px; /* Adjust the width of the image */
+		width: 400px; /* Adjust the width of the image */
 		height: auto; /* Automatically adjust the height to maintain aspect ratio */
 	}
 	.image a {
