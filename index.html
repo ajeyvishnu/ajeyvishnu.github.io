@@ -494,40 +494,6 @@
 					});
 
 					document.addEventListener('DOMContentLoaded', function() {
-            const projectsContainer = document.getElementById('projects');
-            const showMoreBtn = document.getElementById('showMoreBtn');
-            const articles = Array.from(document.querySelectorAll('.project-box'));
-
-            const articlesToShowInitially = 6;
-            let visibleArticles = articles.slice(0, articlesToShowInitially);
-
-            // Function to show articles
-            const showArticles = () => {
-                projectsContainer.innerHTML = '';
-                visibleArticles.forEach(article => {
-                    projectsContainer.appendChild(article);
-                });
-            };
-
-            // Initial display of articles
-            showArticles();
-
-            // Function to handle Show More button click
-            const handleShowMoreClick = () => {
-                const currentlyVisibleCount = visibleArticles.length;
-                const nextBatch = articles.slice(currentlyVisibleCount, currentlyVisibleCount + articlesToShowInitially);
-                visibleArticles = [...visibleArticles, ...nextBatch];
-                showArticles();
-
-                // Hide the button if all articles are shown
-                if (visibleArticles.length === articles.length) {
-                    showMoreBtn.style.display = 'none';
-                }
-            };
-
-            // Attach click event to Show More button
-            showMoreBtn.addEventListener('click', handleShowMoreClick);
-        });
 
 					</script>
 
